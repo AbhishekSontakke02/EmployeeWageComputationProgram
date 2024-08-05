@@ -4,7 +4,7 @@ public class EmpWageCalculator {
 	public static final int IS_FULL_TIME = 1;
 	public static final int IS_PART_TIME = 2;
 	public static final int EMP_RATE_PER_HOUR = 20;
-	public static final int NUMBER_OF_WORKING_DAYS = 20;
+	public static final int NUMBER_OF_WORKING_DAYS = 30;
 	public static final int MAX_HRS_IN_MONTH = 100;
 	static int TOTAL_WORKING_DAYS=0;
 	static int EMP_HOURS = 0;
@@ -28,19 +28,19 @@ public class EmpWageCalculator {
 			case IS_PART_TIME :
 				System.out.println("Part Time Employee is Present!");
 				EMP_HOURS = 4;
-				System.out.println("Day : "+ TOTAL_WORKING_DAYS +" Emp HRS : "+EMP_HOURS+" Total Emp HRS : "+TOTAL_HRS+" Emp Wage :"+ calculateEmpWage());
+				System.out.println("Emp Wage :"+ calculateEmpWage()+" Day : "+ TOTAL_WORKING_DAYS +" Emp HRS : "+EMP_HOURS+" Total Emp HRS : "+TOTAL_HRS);
 				break;
 				
 			case IS_FULL_TIME:
 				System.out.println("Full Time Employee is Present!");
 				EMP_HOURS = 8;
-				System.out.println("Day : "+ TOTAL_WORKING_DAYS +" Emp HRS : "+EMP_HOURS+" Total Emp HRS : "+TOTAL_HRS+" Emp Wage :"+ calculateEmpWage());
+				System.out.println("Emp Wage : "+ calculateEmpWage()+" Day : "+ TOTAL_WORKING_DAYS +" Emp HRS : "+EMP_HOURS+" Total Emp HRS : "+TOTAL_HRS);
 				break;
 				
 			default :
 				System.out.println("Employee is Absent!");
 				EMP_HOURS = 0;
-				System.out.println("Day : "+ TOTAL_WORKING_DAYS +" Emp HRS : "+EMP_HOURS+" Total Emp HRS : "+TOTAL_HRS+" Emp Wage :"+ calculateEmpWage());	
+				System.out.println("Emp Wage :"+ calculateEmpWage()+" Day : "+ TOTAL_WORKING_DAYS +" Emp HRS : "+EMP_HOURS+" Total Emp HRS : "+TOTAL_HRS);	
 		}	
 	}
 	
